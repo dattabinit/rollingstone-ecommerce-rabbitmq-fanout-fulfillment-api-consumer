@@ -174,22 +174,12 @@ public class ItemMaster {
 		this.shippedBy = shippedBy;
 	}
 	
-	public ItemMaster(String itemSKUCode, String itemUPCCode, String itemName, String description,
-			String itemShortDescription, String dimention, String itemSize, String itemColor, String manufacturer,
-			String itemProducer, String productOf, String shippedBy) {
-		super();
-		this.itemSKUCode = itemSKUCode;
+	public ItemMaster(int itemQuantity,String itemUPCCode,String itemName, String itemColor,String itemSize, String itemShippedBy) {
 		this.itemUPCCode = itemUPCCode;
 		this.itemName = itemName;
-		this.description = description;
-		this.itemShortDescription = itemShortDescription;
-		this.dimention = dimention;
 		this.itemSize = itemSize;
 		this.itemColor = itemColor;
-		this.manufacturer = manufacturer;
-		this.itemProducer = itemProducer;
-		this.productOf = productOf;
-		this.shippedBy = shippedBy;
+		this.shippedBy = itemShippedBy;
 	}
 
 	public ItemMaster() {

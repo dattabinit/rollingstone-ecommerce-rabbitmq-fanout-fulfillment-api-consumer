@@ -1,5 +1,7 @@
 package com.rollingstone.service;
 
+import java.util.Optional;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
@@ -33,8 +35,10 @@ public class FulfillmentServiceImpl implements FulfillmentService {
 	@Override
 	public Fulfillment getFulfillment(long id) {
 	
-		Fulfillment accountRceivable = fulfillmentDaoRepository.getFulfillmentByID(id);
-		return accountRceivable;
+		Optional<Fulfillment> fulfillmentOptional = fulfillmentDaoRepository.findById(id);
+		Fulfillment fulfillment = fulfillmentOptional.get();
+		
+		return fulfillment;
 	}
 
 	@Override

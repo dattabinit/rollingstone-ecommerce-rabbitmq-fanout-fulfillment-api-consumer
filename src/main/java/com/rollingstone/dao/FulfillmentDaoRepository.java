@@ -13,6 +13,4 @@ public interface FulfillmentDaoRepository extends PagingAndSortingRepository<Ful
 
 	Page<Fulfillment> findAll(Pageable pageable);
 	
-	@Query(name = "FulfillmentDaoRepository.getFulfillmentByID", nativeQuery = true)
-	Fulfillment getFulfillmentByID(@Param("id") long id);
 }

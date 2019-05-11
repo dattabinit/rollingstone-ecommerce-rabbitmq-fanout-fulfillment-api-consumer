@@ -13,8 +13,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.converter.MappingJackson2MessageConverter;
 import org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactory;
 
-@Configuration
-public class FulfillmentListernerConfig {
+// @Configuration
+public class FulfillmentListernerConfigBackup {
 
 	@Value("${fulfillment.exchange.name}")
 	private String fulfillmentExchangeName;

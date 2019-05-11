@@ -8,8 +8,7 @@ spring:
 fulfillment:
   exchange:
     name: sales-order-exchange
-     
   queue:
-    name: accounts-receivable-queue
-  routing: 
-    key: accounts-receivable-routing-key
+    name: fulfillment-queue
+  routing:
+    key:  fulfillment-routing-key
